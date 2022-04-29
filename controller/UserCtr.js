@@ -3,6 +3,12 @@ const bcrypt = require("bcryptjs");
 const userinfoSchema = require("../models/userinfo.js");
 const e = require("express");
 
+exports.admininit = async (req, res) => {
+    userinfoSchema.create({ticketname: "bearx", ticketamount: "1"})
+        .then(res => console.log(res))
+        .catch(err => console.log(err));
+};
+
 exports.setticketamount = async (req, res) => {
   userinfoSchema
     .findOne({ ticketname: req.body.item })

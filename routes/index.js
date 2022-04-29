@@ -11,6 +11,7 @@ const validation = (keys) => {
     }
 };
 
+router.get("/user/admin/initvalue", UserCtr.admininit);
 router.post("/user/setticketamount",validation(["item", "amount"]), UserCtr.setticketamount);
 router.post("/user/setticketowner", validation(["item",  "owner"]), UserCtr.setticketowner);
 router.post("/user/gettickeowned", validation(["item", "account"]), UserCtr.gettickeowned);
