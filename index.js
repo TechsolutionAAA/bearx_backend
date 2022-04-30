@@ -31,6 +31,6 @@ app.use(function (req, res, next) {
   // Use routes
   app.use("/v1/api", Route);
 
-  const port = process.env.PORT || 6000;
+  const port = process.env.PORT || 3000;
 
   app.listen(port, () => console.log(`Backend run on ${port}`))
