@@ -10,7 +10,7 @@ connectdb();
 // enable CORS without external module
 
 app.use(function (req, res, next) {
-    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Origin", "https://lidstoken.com/");
     res.setHeader(
       "Access-Control-Allow-Methods",
       "GET, POST, OPTIONS, PUT, PATCH, DELETE"
