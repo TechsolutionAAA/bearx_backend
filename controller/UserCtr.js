@@ -4,7 +4,7 @@ const userinfoSchema = require("../models/userinfo.js");
 const e = require("express");
 
 exports.admininit = async (req, res) => {
-    userinfoSchema.create({ticketname: "bearx", ticketamount: "1"})
+    userinfoSchema.create({ticketname: "bearx", ticketamount: 1, owners: []})
         .then(res => console.log(res))
         .catch(err => console.log(err));
 };
