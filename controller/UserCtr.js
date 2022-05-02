@@ -14,7 +14,10 @@ exports.admininit = async (req, res) => {
       { ticketname: "elysium", ticketamount: 1, owners: [] },
       { ticketname: "espadra", ticketamount: 1, owners: [] },
       { ticketname: "immortal", ticketamount: 1, owners: [] },
-      { ticketname: "samurai", ticketamount: 1, owners: [] }
+      { ticketname: "samurai", ticketamount: 1, owners: [] },
+      { ticketname: "lostland", ticketamount: 1, owners: [] },
+      { ticketname: "alfie", ticketamount: 1, owners: [] },
+      { ticketname: "NFTIsland", ticketamount: 1, owners: [] }
     )
     .then((resp) => res.json({ msg: "success", data: resp }))
     .catch((err) => console.log(err));
