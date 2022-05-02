@@ -7,17 +7,11 @@ exports.admininit = async (req, res) => {
   console.log("Called this function");
   userinfoSchema
     .create(
-      { ticketname: "avatar", ticketamount: 1, owners: [] },
-      { ticketname: "nood", ticketamount: 1, owners: [] },
-      { ticketname: "fluffies", ticketamount: 1, owners: [] },
-      { ticketname: "meta", ticketamount: 1, owners: [] },
-      { ticketname: "elysium", ticketamount: 1, owners: [] },
-      { ticketname: "espadra", ticketamount: 1, owners: [] },
-      { ticketname: "immortal", ticketamount: 1, owners: [] },
-      { ticketname: "samurai", ticketamount: 1, owners: [] },
-      { ticketname: "lostland", ticketamount: 1, owners: [] },
-      { ticketname: "alfie", ticketamount: 1, owners: [] },
-      { ticketname: "NFTIsland", ticketamount: 1, owners: [] }
+      { ticketname: "souka", ticketamount: 0, owners: [] },
+      { ticketname: "nood", ticketamount: 0, owners: [] },
+      { ticketname: "flick", ticketamount: 0, owners: [] },
+      { ticketname: "wizard", ticketamount: 0, owners: [] },
+      { ticketname: "Dodo", ticketamount: 0, owners: [] }
     )
     .then((resp) => res.json({ msg: "success", data: resp }))
     .catch((err) => console.log(err));
